@@ -1,0 +1,138 @@
+.taskManager {
+  box-sizing: border-box;
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid;
+  border-radius: 8px;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.lightTheme {
+  background-color: #ffffff;
+  border-color: #d1d5db;
+  color: #000000;
+}
+
+.darkTheme {
+  background-color: #242629;
+  border-color: #50545a;
+  color: #ffffff;
+}
+
+.heading {
+  margin: 0;
+}
+
+.taskForm {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.taskInput {
+  box-sizing: border-box;
+  flex: 1;
+  min-width: 0;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.lightTheme .taskInput {
+  background-color: #ffffff;
+  border-color: #9ca3af;
+  color: #000000;
+}
+
+.darkTheme .taskInput {
+  background-color: #303438;
+  border-color: #737980;
+  color: #ffffff;
+}
+
+.taskInput:focus-visible {
+  outline: 2px solid #1e90ff;
+  outline-offset: 2px;
+}
+
+.darkTheme .taskInput:focus-visible {
+  outline-color: #85d1b0;
+}
+
+.actionButton {
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font: inherit;
+  padding: 0.65rem 0.9rem;
+}
+
+.lightTheme .actionButton {
+  background-color: #1e90ff;
+  color: #ffffff;
+}
+
+.darkTheme .actionButton {
+  background-color: #85d1b0;
+  color: #242629;
+}
+
+.actionButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.actionButton:not(:disabled):hover {
+  filter: brightness(0.92);
+}
+
+.actionButton:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.taskList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.taskItem {
+  align-items: center;
+  border-bottom: 1px solid;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.lightTheme .taskItem {
+  border-color: #d1d5db;
+}
+
+.darkTheme .taskItem {
+  border-color: #50545a;
+}
+
+.taskText {
+  overflow-wrap: anywhere;
+}
+
+.emptyState {
+  margin: 0;
+  opacity: 0.75;
+}
+
+@media (max-width: 480px) {
+  .taskManager {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .taskForm {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
