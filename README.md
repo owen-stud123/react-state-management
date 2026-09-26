@@ -1,3 +1,56 @@
+# React State Management — Theme Switcher & Task Manager
+
+This project was created for the React Guided Learning Activity on `useContext` and `useReducer`.
+
+The application demonstrates:
+
+- Light and dark theme switching using React Context and `useContext`
+- Global theme state using `ThemeProvider`
+- A custom `useTheme` hook
+- Task management using `useReducer`
+- Adding and removing tasks
+- TypeScript types for application state and actions
+
+## Technologies
+
+- React
+- TypeScript
+- Vite
+- React Context API
+- `useContext`
+- `useReducer`
+- CSS Modules
+
+## Running the Project
+
+Install the dependencies:
+
+```
+npm install
+```
+
+Start the development server:
+
+```
+npm run dev
+```
+
+The application will be available at the local URL shown in the terminal.
+
+To create a production build:
+
+```
+npm run build
+```
+
+To check the project with ESLint:
+
+```
+npm run lint
+```
+
+---
+
 # **React Guided Learning Activity: Theme Switcher & useReducer**
 
 **Title:** Implementing a Theme Switcher with useContext & State Management with useReducer
