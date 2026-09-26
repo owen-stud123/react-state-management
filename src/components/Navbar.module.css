@@ -1,0 +1,47 @@
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.lightTheme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.darkTheme {
+  background-color: #242629;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.toggleButton {
+  border: 0;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  padding: 0.65rem 1rem;
+  transition: background-color 160ms ease;
+}
+
+.lightTheme .toggleButton {
+  background-color: #1e90ff;
+}
+
+.darkTheme .toggleButton {
+  background-color: #85d1b0;
+  color: #242629;
+}
+
+.toggleButton:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
